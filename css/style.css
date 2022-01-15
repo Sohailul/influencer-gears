@@ -10,6 +10,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navbar CSS */
+
 #navbar{
     margin: 40px 100px;
 }
@@ -41,4 +43,137 @@ nav ul>li>a{
     padding: 15px 10px;
     color: black;
 
+}
+
+/* Influencer Top CSS */
+
+.top-section{
+    margin: 40px 100px;
+}
+
+.influencer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.influencer-top-left{
+    width: 580px;
+}
+.influencer-top-img img{
+    width: 100%;
+}
+.influencer-top-left h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #3A3A3A;
+}
+.influencer-top-left p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #3A3A3A;
+}
+.influencer-top-left .btn{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    color: #fff;
+    width: 196px;
+    height: 44px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Popular Collection CSS*/
+.popular-collection{
+    margin-top: 100px;
+}
+.popular-collection .collections{
+    width: 1200px;
+    margin: 2% 15%;
+}
+
+.popular-collection .popular-head{
+    font-size: 28px;
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+    line-height: 70px;
+}
+
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 26px;
+}
+
+.collection{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-info h1{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.collection-info h3{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014
+}
+
+.ratings span{
+    margin-left: 15px;
+    color: #787885;
+}
+
+.collection-info p{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    color: #787885;
+}
+
+/* Footer Section CSS */
+
+.footer-section{
+    margin-top: 100px;
+    background-color: #0A0826;
+    color: #fff;
+}
+
+.footer{
+    padding: 4%;
+    text-align: center;
+}
+
+.footer-info h1{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.footer-info p{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #D9DBE1;
+}
+.social-links i{
+    font-size: 25px;
+    line-height: 60px;
+    margin: 0px 16px;
+    color: white;
 }
