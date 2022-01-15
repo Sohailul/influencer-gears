@@ -16,33 +16,9 @@ body{
     margin: 40px 100px;
 }
 
-.conatiner{
+.nav-conatiner{
     max-width: 1200px;
     padding:0 30px;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-}
-
-nav ul{
-    display: flex;
-}
-
-nav ul li{
-    list-style: none;
-    margin: 10px;
-}
-
-nav ul>li>a{
-    text-decoration: none;
-    font-size: 20px;
-    padding: 15px 10px;
-    color: black;
-
 }
 
 /* Influencer Top CSS */
@@ -93,8 +69,8 @@ nav ul>li>a{
     margin-top: 100px;
 }
 .popular-collection .collections{
-    width: 1200px;
-    margin: 2% 15%;
+    margin: 2% 10%;
+    padding: 0 5%;
 }
 
 .popular-collection .popular-head{
@@ -176,4 +152,89 @@ nav ul>li>a{
     line-height: 60px;
     margin: 0px 16px;
     color: white;
+}
+
+/* Media Queries */
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+
+    .container{
+        width: 100%;
+    }
+    .influencer-top, .collections{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .logo h1{
+        text-align: center;
+        font-size: 26px;
+        line-height: 24px;
+    }
+
+    .influencer-top-left{
+        width: 404px;
+        height: 222px;
+        /* left: -22px; */
+        top: 352px;
+    }
+
+    .influencer-top-left h1{
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+    }
+    .influencer-top-left p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+    }
+    .influencer-top-left .btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 24px;
+        margin-left: 83px;
+        background: #E02C6D;
+        border-radius: 41px;
+    }
+
+    .influencer-top-img{
+        margin-top: 50px;
+        width: 257px;
+        height: 257px;
+    }
+
+    .collection{
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .logo h1{
+        text-align: center;
+        font-size: 26px;
+        line-height: 24px;
+    }
+    .popular-collection .collections{
+        margin: 2% 5%;
+        padding: 0 2%;
+    }
+    .influencer-top{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
 }
